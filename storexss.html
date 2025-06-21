@@ -1,0 +1,18 @@
+<!-- index.html -->
+<form method="GET">
+  <input name="comment" placeholder="Leave a comment" />
+  <button type="submit">Post</button>
+</form>
+
+<p>Latest comment:</p>
+<div id="output"></div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  // Using innerHTML to demonstrate XSS vulnerability
+  // Note: This is a security risk and should not be used in production code.
+  // It is only for educational purposes to show how XSS can occur.
+  // Always sanitize user input in real applications.
+  document.getElementById("output").innerHTML = params.get("comment");
+  // document.getElementById('output').innerText = params.get('comment');
+</script>
