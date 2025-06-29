@@ -17,12 +17,12 @@ This repository contains resources, code samples, and documentation focused on s
 ## Getting Started
 
 1. **Clone the repository:**
-    ```bash
-    git clone https://github.com/your-username/Building-Secure-Software-.git
-    cd Building-Secure-Software-
-    ```
+   ```bash
+   git clone https://github.com/your-username/Building-Secure-Software-.git
+   cd Building-Secure-Software-
+   ```
 2. **Explore the resources:**  
-    Browse the folders and files for guides, code samples, and references.
+   Browse the folders and files for guides, code samples, and references.
 
 ## Best Practices
 
