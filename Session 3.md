@@ -16,7 +16,7 @@
 
 ## Example 1: PHP - SQL Injection
 
-```sh
+```php
 $unsafe_email = $_POST['email']; $sql = "SELECT * FROM users WHERE email = '$unsafe_email'"; $result = mysqli_query($conn, $sql);
 ```
 
@@ -24,16 +24,16 @@ $unsafe_email = $_POST['email']; $sql = "SELECT * FROM users WHERE email = '$u
 
 ## Example 2: JavaScript - DOM-Based XSS
 
-```sh
+```js
 const comment = location.hash.substring(1);
-document.getElementById('output').innerHTML = comment;
+document.getElementById("output").innerHTML = comment;
 ```
 
 ### 🛠️ Task: Prevent script injection from the URL fragment.
 
 ## Example 3: Python (Flask) - Missing Input Validation
 
-```sh
+```python
 @app.route('/user/<username>')
     def profile(username):
         return f"Welcome, {username}"
@@ -43,7 +43,7 @@ document.getElementById('output').innerHTML = comment;
 
 ## Example 4: Java - Insecure Role Check
 
-```sh
+```java
 if (request.getParameter("role").equals("admin")) {
         giveAdminAccess();
 }
